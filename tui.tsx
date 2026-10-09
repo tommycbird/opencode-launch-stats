@@ -2,7 +2,7 @@
 import { createSignal, For } from "solid-js"
 import { Plugin } from "@opencode/plugin/tui"
 
-const SHEEP = [
+const BIRD = [
   "    _ ,-.",
   "   \\ `)  )",
   "  __).' (,-.__",
@@ -58,7 +58,7 @@ export default Plugin.define({
         return (
           <box flexDirection="row" gap={6} justifyContent="center">
             <box flexDirection="column">
-              <For each={SHEEP}>{(line) => <text fg="#90ee90" attributes={1}>{line}</text>}</For>
+              <For each={BIRD}>{(line) => <text fg="#90ee90" attributes={1}>{line}</text>}</For>
             </box>
             <box flexDirection="column" gap={0}>
               <For each={stats()}>
