@@ -1,18 +1,16 @@
 # opencode-launch-stats
 
-TUI plugin for [opencode](https://opencode.ai) that replaces the startup logo with a bird ASCII art and live stats (git branch, today's token usage, last session title).
+OpenCode V2 CLI plugin that adds a sheep ASCII art block with live stats (git branch, today's token usage, last session title) to the home screen.
+
+Requires OpenCode 2.x. The V1 version is tagged in git history (`6dc3e76`).
 
 ## Install
 
-Add to your `tui.json`:
+Clone into your global plugins directory. OpenCode discovers `tui.tsx` automatically:
 
-```json
-{
-  "plugin": ["./index.tsx"]
-}
+```sh
+git clone https://github.com/tommycbird/opencode-launch-stats ~/.config/opencode/plugins/launch-stats
 ```
-
-Or copy `index.tsx` to `~/.config/opencode/plugins/` and add `"./plugins/index.tsx"` to your `tui.json` plugin array.
 
 ## License
 
